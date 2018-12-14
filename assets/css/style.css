@@ -1,0 +1,32 @@
+body{
+    background:black;
+}
+.ffStyle{
+    background-color:#04008b;
+    margin: 5px 10px 10px 0px;
+    font-family: Verdana, sans-serif;
+}
+.ffStyleTop{
+    margin: 10px 10px 5px 10px;
+    background-color:#04008b;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.instjumbo{
+    height:80%;
+}
+.cImg{
+    height:300px;
+    width:130px;
+}
+.crystalScreen{
+    margin: 5px 10px 10px 0px;
+}
+.scoresJumbo{
+ height: 285px;
+}
+#toMatch{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
