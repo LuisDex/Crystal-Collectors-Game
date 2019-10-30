@@ -39,13 +39,14 @@ dispAll();
 //Generates each of the Crystals and assigns a random value to them
 for (var i = 0; i < crystalNames.length; i++)
 {
-var crystalValue = Math.floor(Math.random()*12 + 2);
-console.log(crystalValue);
+    var crystalValue = Math.floor(Math.random()*12 + 2);
+    var crystalCol = $("<div>").addClass("col-3").addClass("col-sm-3");
     var imageCrystal = $("<img>");
     imageCrystal.addClass("cImg");
     imageCrystal.attr("src", crystalImages[i]);
     imageCrystal.attr("crystalvalue", crystalValue);
-    $("#crystals").append(imageCrystal);
+    $(crystalCol).append(imageCrystal);
+    $("#crystals").append(crystalCol);
 };
 
 //Reacts to each click on a crystal
@@ -53,7 +54,6 @@ $(".cImg").on("click",function(){
 
     var addValue = ($(this).attr("crystalvalue"));
     addValue = parseInt(addValue);
-    console.log(addValue);
     playerNumber = playerNumber + addValue;
     dispAll();
 

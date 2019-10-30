@@ -13,15 +13,18 @@ body{
     padding-bottom:10px;
 }
 .instjumbo{
-    height:80%;
+    height:100%;
 }
 .cImg{
     height:300px;
     width:130px;
 }
-.crystalScreen{
-    margin: 5px 10px 10px 0px;
-}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 .scoresJumbo{
  height: 285px;
 }
